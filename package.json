@@ -18,11 +18,13 @@
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.0",
     "@nuxtjs/eslint-config": "^4.0.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/eslint-module": "^3.0.0",
     "@nuxtjs/tailwindcss": "^3.1.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
-    "eslint-plugin-nuxt": "^1.0.0"
+    "eslint-plugin-nuxt": "^1.0.0",
+    "tailwindcss-dark-mode": "^1.1.7"
   }
 }
