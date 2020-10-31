@@ -1,7 +1,56 @@
 :root {
-  --dark-default: #202C39;
-  --dark-primary: #FFC857;
-  --light-default: #F5F5F5;
-  --light-primary: #2176FF;
-  --accent-default: #F72585;
+  --dark-default-50: #f4f4f5;
+  --dark-default-100: #e9eaeb;
+  --dark-default-200: #c7cace;
+  --dark-default-300: #a6abb0;
+  --dark-default-400: #636b74;
+  --dark-default-500: #202c39;
+  --dark-default-600: #1d2833;
+  --dark-default-700: #131a22;
+  --dark-default-800: #0e141a;
+  --dark-default-900: #0a0d11;
+
+  --dark-primary-50: #FFFCF7;
+  --dark-primary-100: #FFFAEE;
+  --dark-primary-200: #FFF1D5;
+  --dark-primary-300: #FFE9BC;
+  --dark-primary-400: #FFD989;
+  --dark-primary-500: #FFC857;
+  --dark-primary-600: #E6B44E;
+  --dark-primary-700: #997834;
+  --dark-primary-800: #735A27;
+  --dark-primary-900: #4D3C1A;
+
+  --light-default-50: #FFFFFF;
+  --light-default-100: #FEFEFE;
+  --light-default-200: #FDFDFD;
+  --light-default-300: #FBFBFB;
+  --light-default-400: #F8F8F8;
+  --light-default-500: #F5F5F5;
+  --light-default-600: #DDDDDD;
+  --light-default-700: #939393;
+  --light-default-800: #6E6E6E;
+  --light-default-900: #4A4A4A;
+
+  --light-primary-50: #F4F8FF;
+  --light-primary-100: #E9F1FF;
+  --light-primary-200: #C8DDFF;
+  --light-primary-300: #A6C8FF;
+  --light-primary-400: #649FFF;
+  --light-primary-500: #2176FF;
+  --light-primary-600: #1E6AE6;
+  --light-primary-700: #144799;
+  --light-primary-800: #0F3573;
+  --light-primary-900: #0A234D;
+
+  --accent-default-50: #FFF4F9;
+  --accent-default-100: #FEE9F3;
+  --accent-default-200: #FDC9E1;
+  --accent-default-300: #FCA8CE;
+  --accent-default-400: #F966AA;
+  --accent-default-500: #F72585;
+  --accent-default-600: #DE2178;
+  --accent-default-700: #941650;
+  --accent-default-800: #6F113C;
+  --accent-default-900: #4A0B28;
 }

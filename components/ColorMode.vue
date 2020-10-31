@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="rounded-full h-16 w-16 absolute bottom-0 right-0 bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800 m-4 flex justify-center items-center" @click="changeMode">
+    <button class="rounded-full h-16 w-16 absolute bottom-0 right-0 bg-dark dark:bg-light text-light dark:text-dark m-4 flex justify-center items-center" @click="changeMode">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
