@@ -21,16 +21,16 @@
   --dark-primary-800: #735A27;
   --dark-primary-900: #4D3C1A;
 
-  --light-default-50: #FFFFFF;
-  --light-default-100: #FEFEFE;
-  --light-default-200: #FDFDFD;
-  --light-default-300: #FBFBFB;
-  --light-default-400: #F8F8F8;
-  --light-default-500: #F5F5F5;
-  --light-default-600: #DDDDDD;
-  --light-default-700: #939393;
-  --light-default-800: #6E6E6E;
-  --light-default-900: #4A4A4A;
+  --light-default-50: #FEFEFF;
+  --light-default-100: #FDFEFE;
+  --light-default-200: #FBFCFD;
+  --light-default-300: #F8FAFC;
+  --light-default-400: #F2F6F9;
+  --light-default-500: #EDF2F7;
+  --light-default-600: #D5DADE;
+  --light-default-700: #8E9194;
+  --light-default-800: #6B6D6F;
+  --light-default-900: #47494A;
 
   --light-primary-50: #F4F8FF;
   --light-primary-100: #E9F1FF;

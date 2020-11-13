@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="min-h-screen flex justify-center items-center text-center mx-auto">
     <div>
       <Logo />
       <h1 class="title text-light-primary dark:text-dark-primary">
@@ -38,9 +38,9 @@ export default {
 </script>
 
 <style>
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
+/* .container { */
+  /* @apply min-h-screen flex justify-center items-center text-center mx-auto; */
+/* } */
 
 .title {
   font-family:
