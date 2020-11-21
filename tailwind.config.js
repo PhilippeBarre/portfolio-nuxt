@@ -1,6 +1,6 @@
 module.exports = {
+  darkMode: 'class',
   theme: {
-    darkSelector: ".dark-mode",
     screens: {
       sm: "640px",
       md: "768px",
@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         dark: {
-          default:  "var(--dark-default-500)",
+          DEFAULT: "var(--dark-default-500)",
           50: "var(--dark-default-50)",
           100: "var(--dark-default-100)",
           200: "var(--dark-default-200)",
@@ -23,7 +23,7 @@ module.exports = {
           900: "var(--dark-default-900)"
         },
         dark_primary: {
-          default:  "var(--dark-primary-500)",
+          DEFAULT: "var(--dark-primary-500)",
           50: "var(--dark-primary-50)",
           100: "var(--dark-primary-100)",
           200: "var(--dark-primary-200)",
@@ -36,7 +36,7 @@ module.exports = {
           900: "var(--dark-primary-900)"
         },
         light: {
-          default:  "var(--light-default-500)",
+          DEFAULT: "var(--light-default-500)",
           50: "var(--light-default-50)",
           100: "var(--light-default-100)",
           200: "var(--light-default-200)",
@@ -49,7 +49,7 @@ module.exports = {
           900: "var(--light-default-900)"
         },
         light_primary: {
-          default:  "var(--light-primary-500)",
+          DEFAULT: "var(--light-primary-500)",
           50: "var(--light-primary-50)",
           100: "var(--light-primary-100)",
           200: "var(--light-primary-200)",
@@ -62,7 +62,7 @@ module.exports = {
           900: "var(--light-primary-900)"
         },
         accent: {
-          default:  "var(--accent-default-500)",
+          DEFAULT: "var(--accent-default-500)",
           50: "var(--accent-default-50)",
           100: "var(--accent-default-100)",
           200: "var(--accent-default-200)",
@@ -78,26 +78,19 @@ module.exports = {
     }
   },
   variants: {
-    backgroundColor: [
-      "dark",
-      "dark-hover",
-      "dark-group-hover",
-      "dark-even",
-      "dark-odd",
-      "hover",
-      "responsive"
-    ],
-    borderColor: [
-      "dark",
-      "dark-focus",
-      "dark-focus-within",
-      "hover",
-      "responsive"
-    ],
-    textColor: ["dark", "dark-hover", "dark-active", "hover", "responsive"],
-    width: ['responsive', 'hover', 'focus'],
+    extend: {
+      backgroundColor: [
+        "hover",
+        "responsive"
+      ],
+      borderColor: [
+        "hover",
+        "responsive"
+      ],
+      textColor: ["hover", "responsive"],
+      width: ['responsive', 'hover'],
+    }
   },
   plugins: [
-    require("tailwindcss-dark-mode")()
   ]
 };

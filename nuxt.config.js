@@ -31,8 +31,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -56,6 +55,6 @@ export default {
   },
 
   purgeCSS: {
-    whitelist: ['dark-mode']
+    // whitelist: ['dark']
   },
 }

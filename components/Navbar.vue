@@ -106,12 +106,12 @@
 export default {
   computed: {
     isDark () {
-      return this.$colorMode.preference === 'dark'
+      return this.$store.state.theme.currentTheme === 'dark'
     }
   },
   methods: {
     changeMode () {
-      this.$colorMode.preference = this.$colorMode.preference === 'light' ? 'dark' : 'light'
+      this.$store.commit('theme/toggle')
     }
   }
 }
@@ -119,27 +119,24 @@ export default {
 
 <style>
 .navbar {
-  @apply z-20 bg-light-300 fixed bottom-0 w-screen h-20;
+  @apply z-20 bg-light-300 fixed bottom-0 w-screen h-20
+  sm:w-20 sm:h-screen sm:top-0
+  sm:hover:w-64
+  dark:bg-dark-600;
   transition: width 200ms;
-}
-.dark-mode .navbar {
-  @apply bg-dark-600;
 }
 
 .nav-link {
-  @apply flex justify-center items-center h-20 text-dark no-underline;
+  @apply flex justify-center items-center h-20 text-dark no-underline
+  sm:justify-start
+  dark:text-light
+  hover:bg-light hover:text-light_primary 
+  dark:hover:bg-dark dark:hover:text-dark_primary;
   filter: grayscale(100%) opacity(0.7);
-  transition: 200ms ease-in-out;
-}
-.dark-mode .nav-link {
-  @apply text-light;
+  /* transition: 200ms ease-in-out; */
 }
 .nav-link:hover {
-  @apply bg-light text-light_primary;
   filter: grayscale(0) opacity(1);
-}
-.dark-mode .nav-link:hover {
-  @apply bg-dark text-dark_primary;
 }
 
 .nav-link .svg-icon {
@@ -151,20 +148,9 @@ export default {
 }
 
 @screen sm {
-  .navbar {
-    @apply w-20 h-screen top-0;
-  }
-  .navbar:hover {
-    @apply w-64;
-  }
-
   .navbar:hover .link-text {
     display: inline;
     transition: opacity 200ms;
-  }
-
-  .nav-link {
-    @apply justify-start;
   }
 }
 </style>

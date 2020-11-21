@@ -1,5 +1,5 @@
 <template>
-  <div class="transition duration-700 ease-in-out">
+  <div class="text-dark bg-light dark:text-light dark:bg-dark">
     <Navbar />
     <div class="nuxt-container">
       <Nuxt />
@@ -17,10 +17,5 @@
     width: calc(100% - 5rem);
   }
 }
-.dark-mode {
-  @apply text-light bg-dark;
-}
-.light-mode {
-  @apply text-dark bg-light;
-}
+
 </style>
